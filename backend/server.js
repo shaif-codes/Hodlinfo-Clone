@@ -8,7 +8,6 @@ import top10 from './routes/top10.js'
 
 dotenv.config();
 const port = process.env.PORT || 5000
-const clientUrl = process.env.CLIENT_URL;
 const app = express()
 
 app.use(cors({
