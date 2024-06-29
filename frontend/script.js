@@ -24,7 +24,7 @@ const toptickets = document.getElementById("topticket");
 
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:4000/top10");
+                const response = await fetch("https://hodlinfo-clone-9zop.onrender.com/top10");
                 let actualData = [];
 
                 if (response.status === 404) {
