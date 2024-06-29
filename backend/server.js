@@ -12,7 +12,7 @@ const clientUrl = process.env.CLIENT_URL;
 const app = express()
 
 app.use(cors({
-    origin: clientUrl
+    origin: "*"
 }));
 app.use("/storeData", storeData);
 app.use("/top10", top10);
