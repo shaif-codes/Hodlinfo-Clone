@@ -33,7 +33,7 @@ body {
     color: white;
     position: relative;
     top: 20%;
-    left: 7%;
+    left: 4.5%;
 }
 .loader {
     border: 16px solid #f3f3f3;
@@ -46,7 +46,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none; /* Hide loader initially */
+    display: block; /* Hide loader initially */
 }
 
 @keyframes spin {

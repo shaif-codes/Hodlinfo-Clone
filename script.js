@@ -52,11 +52,12 @@ const toptickets = document.getElementById("topticket");
         };
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const loaderContainer = document.getElementById("loaderContainer");
+    const loaderContainer = document.getElementsByClassName("loaderContainer")[0];
     const loader = document.getElementById("loader");
-    // loaderContainer.style.display = "fixed";
+    loaderContainer.style.display = "fixed";
     loader.style.display = "block";
+    console.log("data loading");
     fetchData();
-    // loader.style.display = "none";
-    // loaderContainer.style.display = "none";
+    loader.style.display = "none";
+    loaderContainer.style.display = "none";
 })
