@@ -24,6 +24,16 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loaderContainer .msg, .loaderText{
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 7%;
 }
 .loader {
     border: 16px solid #f3f3f3;

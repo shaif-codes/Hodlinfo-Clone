@@ -57,6 +57,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // loaderContainer.style.display = "fixed";
     loader.style.display = "block";
     fetchData();
-    loader.style.display = "none";
+    // loader.style.display = "none";
     // loaderContainer.style.display = "none";
 })
