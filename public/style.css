@@ -380,7 +380,7 @@ body.light-mode tbody tr {
     .table-alter thead tr th,
     .table-alter tbody tr td {
         padding: 4px;
-        font-size: 10px;
+        font-size: 19px;
     }
     .center-block {
         max-width: 100%;
@@ -414,5 +414,10 @@ body.light-mode tbody tr {
     }
     .table-alter th, .table-alter td {
         padding: 4px;
+    }
+    .table-alter thead tr th,
+    .table-alter tbody tr td {
+        padding: 4px;
+        font-size: 10px;
     }
 }
