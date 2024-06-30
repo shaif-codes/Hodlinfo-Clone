@@ -53,7 +53,6 @@ const toptickets = document.getElementById("topticket");
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const loaderContainer = document.getElementsByClassName("loaderContainer")[0];
-    const loader = document.getElementById("loader");
     console.log("data loading");
     fetchData();
     loaderContainer.style.display = "none";
