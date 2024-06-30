@@ -21,6 +21,7 @@ darkModeToggle.addEventListener('change', () => {
 
 // Fetch data from server
 const toptickets = document.getElementById("topticket");
+        const loaderContainer = document.getElementsByClassName("loaderContainer")[0];
 
         const fetchData = async () => {
             try {
@@ -46,14 +47,14 @@ const toptickets = document.getElementById("topticket");
                     `;
                     toptickets.appendChild(row);
                 });
+                loaderContainer.style.display = "none";
             } catch (err) {
                 console.error("Some error occurred during fetching data from backend: ", err);
             }
         };
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const loaderContainer = document.getElementsByClassName("loaderContainer")[0];
     console.log("data loading");
     fetchData();
-    loaderContainer.style.display = "none";
+    
 })
