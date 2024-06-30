@@ -51,4 +51,12 @@ const toptickets = document.getElementById("topticket");
             }
         };
 
-        fetchData();
+document.addEventListener("DOMContentLoaded", ()=>{
+    const loaderContainer = document.getElementById("loaderContainer");
+    const loader = document.getElementById("loader");
+    // loaderContainer.style.display = "fixed";
+    loader.style.display = "block";
+    fetchData();
+    loader.style.display = "none";
+    // loaderContainer.style.display = "none";
+})
